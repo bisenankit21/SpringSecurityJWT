@@ -13,8 +13,8 @@ import org.springframework.security.web.authentication.password.HaveIBeenPwnedRe
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
-@Profile("!prod")
-public class ProjectSecurityConfig {
+@Profile("prod")
+public class ProjectSecurityProdConfig {
 
     //this below method we took from the SpringbootWebSecurityConfiguration class of spring security.
     //this class is responsible for the security configuration for all the endpoints.
