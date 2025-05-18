@@ -14,7 +14,7 @@ CREATE TABLE `customer` (
 );
 
 INSERT INTO `customer` (`name`,`email`,`mobile_number`, `pwd`, `role`,`create_dt`)
- VALUES ('Happy','happy@example.com','5334122365', '{bcrypt}$2a$12$88.f6upbBvy0okEa7OfHFuorV29qeK.sVbB9VQ6J6dWM1bW6Qef8m', 'admin',CURDATE());
+ VALUES ('Happy','happy@example.com','5334122365', '{bcrypt}$2a$12$kjbSf3jl3JH72LtGebuzD.uXjnHq/AqOERMavyaT6dv6bEigAUiGC', 'admin',CURDATE());
 
 CREATE TABLE `accounts` (
   `customer_id` int NOT NULL,
@@ -190,3 +190,8 @@ DELETE FROM `authorities`;
 
  INSERT INTO `authorities` (`customer_id`, `name`)
   VALUES (1, 'ROLE_ADMIN');
+
+
+  username =happy@example.com
+  and
+  password =EazyBytes@12345
